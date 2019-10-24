@@ -1,0 +1,57 @@
+{
+  "name": "class-name-prop",
+  "version": "1.0.0",
+  "description": "A lightweight utility function to create a React className prop value for multiple classes.",
+  "license": "MIT",
+  "author": {
+    "name": "Jayden Seric",
+    "email": "me@jaydenseric.com",
+    "url": "https://jaydenseric.com"
+  },
+  "repository": "github:jaydenseric/class-name-prop",
+  "homepage": "https://github.com/jaydenseric/class-name-prop#readme",
+  "bugs": "https://github.com/jaydenseric/class-name-prop/issues",
+  "keywords": [
+    "react",
+    "class",
+    "name",
+    "className",
+    "prop"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "browserslist": "> 0.5%, not dead",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^2.1.6",
+    "eslint": "^6.5.1",
+    "eslint-config-env": "^10.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-order-alphabetical": "^1.0.0",
+    "eslint-plugin-jsdoc": "^15.12.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "jsdoc-md": "^4.0.1",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "test-director": "^1.0.0"
+  },
+  "scripts": {
+    "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
+    "prepare:jsdoc": "jsdoc-md",
+    "prepare:prettier": "prettier readme.md --write",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "test:api": "node test",
+    "test:size": "size-limit",
+    "prepublishOnly": "npm test"
+  }
+}
