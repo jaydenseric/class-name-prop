@@ -8,6 +8,12 @@
 - Updated dev dependencies.
 - Use [`coverage-node`](https://npm.im/coverage-node) for test code coverage.
 
+### Minor
+
+- Setup [GitHub Sponsors funding](https://github.com/sponsors/jaydenseric):
+  - Added `.github/funding.yml` to display a sponsor button in GitHub.
+  - Added a `package.json` `funding` field to enable npm CLI funding features.
+
 ### Patch
 
 - Removed the now redundant [`eslint-plugin-import-order-alphabetical`](https://npm.im/eslint-plugin-import-order-alphabetical) dev dependency.
