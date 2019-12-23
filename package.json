@@ -1,6 +1,6 @@
 {
   "name": "class-name-prop",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A lightweight utility function to create a React className prop value for multiple classes.",
   "license": "MIT",
   "author": {
