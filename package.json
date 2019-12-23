@@ -23,7 +23,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "browserslist": "> 0.5%, not dead",
   "devDependencies": {
