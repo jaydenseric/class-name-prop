@@ -28,6 +28,7 @@
   "browserslist": "> 0.5%, not dead",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^2.1.6",
+    "coverage-node": "^2.0.0",
     "eslint": "^6.5.1",
     "eslint-config-env": "^12.0.1",
     "eslint-config-prettier": "^6.4.0",
@@ -47,7 +48,7 @@
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint .",
     "test:prettier": "prettier '**/*.{json,yml,md}' -l",
-    "test:api": "node test",
+    "test:api": "coverage-node test",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }
