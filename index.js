@@ -1,3 +1,5 @@
+'use strict'
+
 /* eslint-disable jsdoc/check-param-names */
 
 /**
