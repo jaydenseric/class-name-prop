@@ -4,9 +4,9 @@
 
 ### Major
 
+- Updated Node.js support from v8+ to v10+.
 - Updated dev dependencies.
 - Use [`coverage-node`](https://npm.im/coverage-node) for test code coverage.
-- Updated Node.js support from v8+ to v10+.
 
 ### Patch
 
