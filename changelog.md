@@ -22,6 +22,7 @@
   - Added a `test:jsdoc` script that checks the readme API docs are up to date with the source JSDoc.
   - Simpler `test:prettier` script arguments.
 - Configured Prettier option `semi` to the default, `true`.
+- Updated the EditorConfig.
 
 ## 2.0.0
 
