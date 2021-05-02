@@ -38,16 +38,16 @@ Creates a React `className` prop value for multiple classes.
 _A React component for a link that can be declared active, whilst supporting custom classes._
 
 > ```jsx
-> const classNameProp = require('class-name-prop')
-> const PropTypes = require('prop-types')
-> const React = require('react')
+> const classNameProp = require('class-name-prop');
+> const PropTypes = require('prop-types');
+> const React = require('react');
 >
 > const Link = ({ className, active, ...props }) => (
 >   <a className={classNameProp(className, active && 'active')} {...props} />
-> )
+> );
 >
 > Link.propTypes = {
 >   className: PropTypes.string,
 >   active: PropTypes.bool,
-> }
+> };
 > ```

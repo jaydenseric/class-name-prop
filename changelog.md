@@ -21,6 +21,7 @@
   - Simpler JSDoc related scripts now that [`jsdoc-md`](https://npm.im/jsdoc-md) v10 automatically generates a Prettier formatted readme.
   - Added a `test:jsdoc` script that checks the readme API docs are up to date with the source JSDoc.
   - Simpler `test:prettier` script arguments.
+- Configured Prettier option `semi` to the default, `true`.
 
 ## 2.0.0
 
