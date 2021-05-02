@@ -3,7 +3,8 @@
 /* eslint-disable jsdoc/check-param-names */
 
 /**
- * Creates a React `className` prop value for multiple classes.
+ * Creates a [React](https://reactjs.org) `className` prop value for multiple
+ * classes.
  * @kind function
  * @name classNameProp
  * @param {...*} classes A parameter for each class; only non empty strings are added to the final string.
@@ -16,7 +17,7 @@
  * ```js
  * const classNameProp = require('class-name-prop');
  * ```
- * @example <caption>A React component for a link that can be declared active, whilst supporting custom classes.</caption>
+ * @example <caption>A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom classes.</caption>
  * ```jsx
  * function Link({ className, active, ...props }) {
  *   return (

@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/class-name-prop)](https://npm.im/class-name-prop) [![CI status](https://github.com/jaydenseric/class-name-prop/workflows/CI/badge.svg)](https://github.com/jaydenseric/class-name-prop/actions)
 
-A lightweight utility function to create a React `className` prop value for multiple classes.
+A lightweight utility function to create a [React](https://reactjs.org) `className` prop value for multiple classes.
 
 - 📦 [Tiny bundle size](https://bundlephobia.com/result?p=class-name-prop), tested.
 - 💪 Supports ancient browsers.
@@ -25,7 +25,7 @@ npm install class-name-prop
 
 ### function classNameProp
 
-Creates a React `className` prop value for multiple classes.
+Creates a [React](https://reactjs.org) `className` prop value for multiple classes.
 
 | Parameter | Type | Description |
 | :-- | :-- | :-- |
@@ -47,7 +47,7 @@ _How to `require`._
 > const classNameProp = require('class-name-prop');
 > ```
 
-_A React component for a link that can be declared active, whilst supporting custom classes._
+_A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom classes._
 
 > ```jsx
 > function Link({ className, active, ...props }) {

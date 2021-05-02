@@ -28,6 +28,7 @@
 - Updated the EditorConfig.
 - Updated code examples.
 - Readme tweaks.
+- Link [React](https://reactjs.org) in docs.
 
 ## 2.0.0
 
