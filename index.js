@@ -8,20 +8,21 @@
  * @name classNameProp
  * @param {...*} classes A parameter for each class; only non empty strings are added to the final string.
  * @returns {string|undefined} A `className` prop value; either a string of classes or `undefined` to prevent rendering an empty `class` attribute.
+ * @example <caption>How to `import`.</caption>
+ * ```js
+ * import classNameProp from 'class-name-prop';
+ * ```
+ * @example <caption>How to `require`.</caption>
+ * ```js
+ * const classNameProp = require('class-name-prop');
+ * ```
  * @example <caption>A React component for a link that can be declared active, whilst supporting custom classes.</caption>
  * ```jsx
- * const classNameProp = require('class-name-prop');
- * const PropTypes = require('prop-types');
- * const React = require('react');
- *
- * const Link = ({ className, active, ...props }) => (
- *   <a className={classNameProp(className, active && 'active')} {...props} />
- * );
- *
- * Link.propTypes = {
- *   className: PropTypes.string,
- *   active: PropTypes.bool,
- * };
+ * function Link({ className, active, ...props }) {
+ *   return (
+ *     <a className={classNameProp(className, active && 'active')} {...props} />
+ *   );
+ * }
  * ```
  */
 module.exports = function classNameProp() {

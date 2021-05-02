@@ -23,6 +23,7 @@
   - Simpler `test:prettier` script arguments.
 - Configured Prettier option `semi` to the default, `true`.
 - Updated the EditorConfig.
+- Updated code examples.
 
 ## 2.0.0
 
