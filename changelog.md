@@ -17,6 +17,7 @@
   - Updated `actions/setup-node` to v2.
   - Use the simpler [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
   - Don’t specify the `CI` environment variable as it’s set by default.
+- Test the bundle size manually using [`esbuild`](https://npm.im/esbuild) and [`gzip-size`](https://npm.im/gzip-size), removing [`size-limit`](https://npm.im/size-limit) related dev dependencies, config, and scripts.
 - Updated the package scripts:
   - Simpler JSDoc related scripts now that [`jsdoc-md`](https://npm.im/jsdoc-md) v10 automatically generates a Prettier formatted readme.
   - Added a `test:jsdoc` script that checks the readme API docs are up to date with the source JSDoc.
