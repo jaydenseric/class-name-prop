@@ -5,13 +5,13 @@
 A lightweight utility function to create a React `className` prop value for multiple classes.
 
 - 📦 [< 70 B](https://bundlephobia.com/result?p=class-name-prop), [Size Limit](https://github.com/ai/size-limit) tested.
-- 💪 Supports ancient browsers and Node.js.
+- 💪 Supports ancient browsers.
 - ⚡️ Simple and fast API.
 - 🧠 Returns `undefined` if there are no classes, to prevent rendering a redundant `class` attribute; unlike packages like [`classnames`](https://github.com/JedWatson/classnames).
 
 ## Setup
 
-To install from [npm](https://npmjs.com) run:
+To install with [npm](https://npmjs.com/get-npm), run:
 
 ```sh
 npm install class-name-prop

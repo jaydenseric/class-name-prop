@@ -24,6 +24,7 @@
 - Configured Prettier option `semi` to the default, `true`.
 - Updated the EditorConfig.
 - Updated code examples.
+- Readme tweaks.
 
 ## 2.0.0
 
