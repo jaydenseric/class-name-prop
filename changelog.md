@@ -5,10 +5,11 @@
 ### Major
 
 - Updated Node.js support to `^12.20 || >= 14.13`.
+- Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
+- The tests are now ESM in an `.mjs` file instead of CJS in a `.js` file.
 
 ### Patch
 
-- Updated dev dependencies.
 - Updated GitHub Actions CI config:
   - Also run on pull request.
   - Also run tests with Node.js v15, v16.

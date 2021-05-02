@@ -20,7 +20,7 @@
  *
  * Link.propTypes = {
  *   className: PropTypes.string,
- *   active: PropTypes.bool
+ *   active: PropTypes.bool,
  * }
  * ```
  */

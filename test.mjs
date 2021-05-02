@@ -1,8 +1,6 @@
-'use strict'
-
-const { strictEqual } = require('assert')
-const { TestDirector } = require('test-director')
-const classNameProp = require('.')
+import { strictEqual } from 'assert'
+import TestDirector from 'test-director'
+import classNameProp from './index.js'
 
 const testDirector = new TestDirector()
 

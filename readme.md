@@ -4,7 +4,7 @@
 
 A lightweight utility function to create a React `className` prop value for multiple classes.
 
-- 📦 [&lt; 70 B](https://bundlephobia.com/result?p=class-name-prop), [Size Limit](https://github.com/ai/size-limit) tested.
+- 📦 [< 70 B](https://bundlephobia.com/result?p=class-name-prop), [Size Limit](https://github.com/ai/size-limit) tested.
 - 💪 Supports ancient browsers and Node.js.
 - ⚡️ Simple and fast API.
 - 🧠 Returns `undefined` if there are no classes, to prevent rendering a redundant `class` attribute; unlike packages like [`classnames`](https://github.com/JedWatson/classnames).
@@ -48,6 +48,6 @@ _A React component for a link that can be declared active, whilst supporting cus
 >
 > Link.propTypes = {
 >   className: PropTypes.string,
->   active: PropTypes.bool
+>   active: PropTypes.bool,
 > }
 > ```
