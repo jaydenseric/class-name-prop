@@ -2,9 +2,20 @@
 
 ## Next
 
+### Major
+
+- Updated Node.js support to `^12.20 || >= 14.13`.
+
 ### Patch
 
 - Updated dev dependencies.
+- Updated GitHub Actions CI config:
+  - Also run on pull request.
+  - Also run tests with Node.js v15, v16.
+  - Updated `actions/checkout` to v2.
+  - Updated `actions/setup-node` to v2.
+  - Use the simpler [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
+  - Don’t specify the `CI` environment variable as it’s set by default.
 
 ## 2.0.0
 
