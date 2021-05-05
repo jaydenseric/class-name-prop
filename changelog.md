@@ -1,5 +1,11 @@
 # class-name-prop changelog
 
+## Next
+
+### Patch
+
+- Tweaked the package `main` field.
+
 ## 3.0.0
 
 ### Major
