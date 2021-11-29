@@ -14,6 +14,7 @@
 - Also run GitHub Actions CI with Node.js v17.
 - Add Node.js version ranges to the package `browserslist` field.
 - Tweaked the package `main` field.
+- Simplified package scripts.
 - Configured Prettier option `singleQuote` to the default, `false`.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
   - Failure message contains details about the bundle size and how much the limit was exceeded.
