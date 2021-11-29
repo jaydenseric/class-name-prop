@@ -15,6 +15,10 @@
 - Add Node.js version ranges to the package `browserslist` field.
 - Tweaked the package `main` field.
 - Configured Prettier option `singleQuote` to the default, `false`.
+- Use a new `assertBundleSize` function to assert module bundle size in tests:
+  - Failure message contains details about the bundle size and how much the limit was exceeded.
+  - Errors when the surplus is greater than 25% of the limit, suggesting the limit should be reduced.
+  - Resolves the minified bundle and its gzipped size for debugging in tests.
 - Removed `npm-debug.log` from the `.gitignore` file as npm [v4.2.0](https://github.com/npm/npm/releases/tag/v4.2.0)+ doesn’t create it in the current working directory.
 
 ## 3.0.0

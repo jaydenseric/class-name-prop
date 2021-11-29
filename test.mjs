@@ -1,11 +1,13 @@
 import { strictEqual } from "assert";
-import { fileURLToPath } from "url";
-import esbuild from "esbuild";
-import { gzipSize } from "gzip-size";
 import TestDirector from "test-director";
 import classNameProp from "./classNameProp.mjs";
+import assertBundleSize from "./test/assertBundleSize.mjs";
 
 const testDirector = new TestDirector();
+
+testDirector.add("`classNameProp` bundle size.", async () => {
+  await assertBundleSize(new URL("./classNameProp.mjs", import.meta.url), 160);
+});
 
 testDirector.add("`classNameProp` with various args.", () => {
   strictEqual(classNameProp(), undefined);
@@ -18,30 +20,6 @@ testDirector.add("`classNameProp` with various args.", () => {
   strictEqual(classNameProp("a", "b", "c"), "a b c");
   strictEqual(classNameProp("a b", "c"), "a b c");
   strictEqual(classNameProp("a", undefined, "c"), "a c");
-});
-
-testDirector.add("Bundle.", async () => {
-  const {
-    outputFiles: [bundle],
-  } = await esbuild.build({
-    entryPoints: [
-      fileURLToPath(
-        // eslint-disable-next-line compat/compat
-        new URL("./classNameProp.mjs", import.meta.url)
-      ),
-    ],
-    write: false,
-    bundle: true,
-    minify: true,
-    legalComments: "none",
-    format: "esm",
-  });
-
-  const kB = (await gzipSize(bundle.contents)) / 1000;
-
-  console.info(`${kB} kB minified and gzipped bundle.`);
-
-  strictEqual(kB < 0.2, true);
 });
 
 testDirector.run();
