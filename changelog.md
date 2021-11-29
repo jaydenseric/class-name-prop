@@ -19,6 +19,7 @@
 
 - Also run GitHub Actions CI with Node.js v17.
 - Add Node.js version ranges to the package `browserslist` field.
+- Updated the package `description` field.
 - Tweaked the package `main` field.
 - Simplified package scripts.
 - Configured Prettier option `singleQuote` to the default, `false`.
