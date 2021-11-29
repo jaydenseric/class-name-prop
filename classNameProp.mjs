@@ -1,5 +1,3 @@
-"use strict";
-
 /* eslint-disable jsdoc/check-param-names */
 
 /**
@@ -9,13 +7,9 @@
  * @name classNameProp
  * @param {...*} classes A parameter for each class; only non empty strings are added to the final string.
  * @returns {string|undefined} A `className` prop value; either a string of classes or `undefined` to prevent rendering an empty `class` attribute.
- * @example <caption>How to `import`.</caption>
+ * @example <caption>How to import.</caption>
  * ```js
  * import classNameProp from "class-name-prop";
- * ```
- * @example <caption>How to `require`.</caption>
- * ```js
- * const classNameProp = require("class-name-prop");
  * ```
  * @example <caption>A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom classes.</caption>
  * ```jsx
@@ -26,7 +20,7 @@
  * }
  * ```
  */
-module.exports = function classNameProp() {
+export default function classNameProp() {
   var className = "";
 
   for (var i = 0; i < arguments.length; i++) {
@@ -35,4 +29,4 @@ module.exports = function classNameProp() {
   }
 
   return className.trim() || undefined;
-};
+}

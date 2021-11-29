@@ -3,7 +3,7 @@ import { fileURLToPath } from "url";
 import esbuild from "esbuild";
 import { gzipSize } from "gzip-size";
 import TestDirector from "test-director";
-import classNameProp from "./index.js";
+import classNameProp from "./classNameProp.mjs";
 
 const testDirector = new TestDirector();
 
@@ -27,13 +27,14 @@ testDirector.add("Bundle.", async () => {
     entryPoints: [
       fileURLToPath(
         // eslint-disable-next-line compat/compat
-        new URL("./index.js", import.meta.url)
+        new URL("./classNameProp.mjs", import.meta.url)
       ),
     ],
     write: false,
     bundle: true,
     minify: true,
     legalComments: "none",
+    format: "esm",
   });
 
   const kB = (await gzipSize(bundle.contents)) / 1000;

@@ -20,12 +20,12 @@
     "prop"
   ],
   "files": [
-    "index.js"
+    "classNameProp.mjs"
   ],
   "sideEffects": false,
-  "main": "./index.js",
+  "main": "./classNameProp.mjs",
   "exports": {
-    ".": "./index.js",
+    ".": "./classNameProp.mjs",
     "./package.json": "./package.json"
   },
   "engines": {

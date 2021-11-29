@@ -31,16 +31,10 @@ Creates a [React](https://reactjs.org) `className` prop value for multiple class
 
 #### Examples
 
-_How to `import`._
+_How to import._
 
 > ```js
 > import classNameProp from "class-name-prop";
-> ```
-
-_How to `require`._
-
-> ```js
-> const classNameProp = require("class-name-prop");
 > ```
 
 _A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom classes._
