@@ -12,6 +12,7 @@
 - Also run GitHub Actions CI with Node.js v17.
 - Add Node.js version ranges to the package `browserslist` field.
 - Tweaked the package `main` field.
+- Removed `npm-debug.log` from the `.gitignore` file as npm [v4.2.0](https://github.com/npm/npm/releases/tag/v4.2.0)+ doesn’t create it in the current working directory.
 
 ## 3.0.0
 
