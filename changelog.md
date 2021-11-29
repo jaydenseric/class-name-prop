@@ -10,6 +10,10 @@
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
 - More modern JavaScript syntax.
 
+### Minor
+
+- Added `./classNameProp.mjs` to the package `exports` field.
+
 ### Patch
 
 - Also run GitHub Actions CI with Node.js v17.
