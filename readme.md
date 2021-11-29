@@ -6,7 +6,7 @@ A lightweight utility function to create a [React](https://reactjs.org) `classNa
 
 - 📦 [Tiny bundle size](https://bundlephobia.com/result?p=class-name-prop), tested.
 - ⚡️ Simple and fast API.
-- 🧠 Returns `undefined` if there are no classes, to prevent rendering a redundant `class` attribute; unlike packages like [`classnames`](https://github.com/JedWatson/classnames).
+- 🧠 Returns `undefined` if there are no class names, to prevent rendering a redundant `class` attribute; unlike packages like [`classnames`](https://github.com/JedWatson/classnames).
 
 ## Installation
 
