@@ -5,6 +5,7 @@
 ### Major
 
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
+- Updated browser support to `> 0.5%, not OperaMini all, not IE > 0, not dead`.
 - Updated dev dependencies, some of which require newer Node.js versions than previously supported.
 - Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
