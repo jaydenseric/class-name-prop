@@ -19,10 +19,6 @@ npm install class-name-prop
 
 ## API
 
-### Table of contents
-
-- [function classNameProp](#function-classnameprop)
-
 ### function classNameProp
 
 Creates a [React](https://reactjs.org) `className` prop value for multiple classes.
