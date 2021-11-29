@@ -8,6 +8,7 @@
 - Updated dev dependencies, some of which require newer Node.js versions than previously supported.
 - Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
+- More modern JavaScript syntax.
 
 ### Patch
 
@@ -16,11 +17,13 @@
 - Tweaked the package `main` field.
 - Simplified package scripts.
 - Configured Prettier option `singleQuote` to the default, `false`.
+- Use the JSDoc type `any` instead of `*` for better TypeScript support.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
   - Failure message contains details about the bundle size and how much the limit was exceeded.
   - Errors when the surplus is greater than 25% of the limit, suggesting the limit should be reduced.
   - Resolves the minified bundle and its gzipped size for debugging in tests.
 - Removed `npm-debug.log` from the `.gitignore` file as npm [v4.2.0](https://github.com/npm/npm/releases/tag/v4.2.0)+ doesn’t create it in the current working directory.
+- Documentation updates.
 
 ## 3.0.0
 
