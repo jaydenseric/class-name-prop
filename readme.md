@@ -16,32 +16,38 @@ To install with [npm](https://npmjs.com/get-npm), run:
 npm install class-name-prop
 ```
 
-## API
+## Exports
 
-### function classNameProp
+These ECMAScript modules are published to [npm](https://npmjs.com) and exported via the [`package.json`](./package.json) `exports` field:
 
-Creates a [React](https://reactjs.org) `className` prop value for multiple class names.
+- [`classNameProp.mjs`](#exports-classNameProp.mjs)
 
-| Parameter | Type | Description |
-| :-- | :-- | :-- |
-| `classNames` | …any | Class name strings to merge; only non empty&#xA;strings are added to the final string. |
+### <span id="exports-classNameProp.mjs">[`classNameProp.mjs`](./classNameProp.mjs)</span>
 
-**Returns:** string | `undefined` — A `className` prop value; either a string of 1 or more space separated class names or `undefined` to prevent rendering an empty `class` attribute.
+#### <span id="exports-classNameProp.mjs-export-default">Export `default`</span>
 
-#### Examples
+Function `classNameProp` — Creates a [React](https://reactjs.org) `className` prop value for multiple class names.
 
-_How to import._
+##### <span id="exports-classNameProp.mjs-export-default-parameters">Parameters</span>
 
-> ```js
-> import classNameProp from "class-name-prop";
-> ```
+1. `...classNames`: `unknown` — Class name strings to merge; only non empty strings are added to the final string.
 
-_A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom class names._
+##### <span id="exports-classNameProp.mjs-export-default-returns">Returns</span>
 
-> ```jsx
-> function Link({ className, active, ...props }) {
->   return (
->     <a className={classNameProp(className, active && "active")} {...props} />
->   );
-> }
-> ```
+`string` | `undefined` — A `className` prop value; either a string of 1 or more space separated class names or `undefined` to prevent rendering an empty `class` attribute.
+
+##### <span id="exports-classNameProp.mjs-export-default-example-1">Example 1</span>
+
+A [React](https://reactjs.org) component for a link that can be declared active, whilst supporting custom class names:
+
+```js
+import classNameProp from "class-name-prop";
+import React from "react";
+
+function Link({ className, active, ...props }) {
+  return React.createElement("a", {
+    className: classNameProp(className, active && "active"),
+    ...props,
+  });
+}
+```
