@@ -11,6 +11,7 @@
 - Updated dev dependencies.
 - Check TypeScript types via a new package `types` script.
 - Removed the [`jsdoc-md`](https://npm.im/jsdoc-md) dev dependency and the related package scripts, replacing the readme “API” section with a manually written “Exports” section.
+- Updated a Bundlephobia link URL in the readme.
 
 ## 4.0.0
 
