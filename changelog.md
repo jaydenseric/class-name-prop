@@ -1,6 +1,6 @@
 # class-name-prop changelog
 
-## Next
+## 5.0.0
 
 ### Major
 
