@@ -2,6 +2,7 @@
 
 import { strictEqual } from "assert";
 import TestDirector from "test-director";
+
 import classNameProp from "./classNameProp.mjs";
 import assertBundleSize from "./test/assertBundleSize.mjs";
 
