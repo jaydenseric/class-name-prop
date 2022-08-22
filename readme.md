@@ -19,7 +19,7 @@ For [Deno](https://deno.land) and browsers, an example import map:
 ```json
 {
   "imports": {
-    "class-name-prop": "https://unpkg.com/class-name-prop@5.0.0/classNameProp.mjs"
+    "class-name-prop": "https://unpkg.com/class-name-prop@6.0.0/classNameProp.mjs"
   }
 }
 ```
