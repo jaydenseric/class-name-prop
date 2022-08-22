@@ -23,7 +23,6 @@
     "classNameProp.mjs"
   ],
   "sideEffects": false,
-  "main": "./classNameProp.mjs",
   "exports": {
     ".": "./classNameProp.mjs",
     "./classNameProp.mjs": "./classNameProp.mjs",
